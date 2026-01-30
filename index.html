@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0a0a'/><rect x='10' y='10' width='80' height='25' rx='5' fill='%23FFD700'/><rect x='10' y='40' width='18' height='18' rx='4' fill='%23FFD700'/><rect x='32' y='40' width='18' height='18' rx='4' fill='%23FFD700'/><rect x='54' y='40' width='18' height='18' rx='4' fill='%23FFD700'/><rect x='76' y='40' width='14' height='18' rx='4' fill='%23FFD700'/><rect x='10' y='62' width='18' height='18' rx='4' fill='%23fff'/><rect x='32' y='62' width='18' height='18' rx='4' fill='%23fff'/><rect x='54' y='62' width='18' height='18' rx='4' fill='%23fff'/><rect x='76' y='62' width='14' height='18' rx='4' fill='%23FFD700'/></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="calculator-wrapper">
+        <header>
+            <div class="header-content">
+                <h1>Online Calculator</h1>
+                <div class="date-display" id="dateDisplay"></div>
+            </div>
+            <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">🌙</button>
+        </header>
+        
+        <main>
+            <form name="calvalue">
+                <div class="display">
+                    <input type="text" id="screen" name="screen" placeholder="0" disabled>
+                </div>
+                
+                <div class="button-grid">
+                    <button type="reset" class="btn btn-top">AC</button>
+                    <button type="button" class="btn btn-top" onclick="percentage()">%</button>
+                    <button type="button" class="btn btn-top" onclick="plusminus()">+/-</button>
+                    <button type="button" class="btn btn-top btn-backspace" onclick="backspace()">⌫</button>
+                    
+                    <button type="button" class="btn" onclick="overx()">1/x</button>
+                    <button type="button" class="btn" onclick="xraise2()">x²</button>
+                    <button type="button" class="btn" onclick="square()">√x</button>
+                    <button type="button" class="btn btn-operator" onclick="rundivide()">÷</button>
+                    
+                    <button type="button" class="btn" onclick="run7()">7</button>
+                    <button type="button" class="btn" onclick="run8()">8</button>
+                    <button type="button" class="btn" onclick="run9()">9</button>
+                    <button type="button" class="btn btn-operator" onclick="runmultiple()">×</button>
+                    
+                    <button type="button" class="btn" onclick="run4()">4</button>
+                    <button type="button" class="btn" onclick="run5()">5</button>
+                    <button type="button" class="btn" onclick="run6()">6</button>
+                    <button type="button" class="btn btn-operator" onclick="runminus()">−</button>
+                    
+                    <button type="button" class="btn" onclick="run1()">1</button>
+                    <button type="button" class="btn" onclick="run2()">2</button>
+                    <button type="button" class="btn" onclick="run3()">3</button>
+                    <button type="button" class="btn btn-operator" onclick="runplus()">+</button>
+                    
+                    <button type="button" class="btn btn-zero" onclick="run0()">0</button>
+                    <button type="button" class="btn" onclick="rundot()">.</button>
+                    <button type="button" class="btn btn-operator" onclick="runequal()">=</button>
+                </div>
+            </form>
+        </main>
+        
+        <footer>
+            <p>Copyright © 2026. All Rights Reserved.<br>
+            Developed by <a href="https://joshuaabefe.github.io" target="_blank">Joshua Abefe</a></p>
+        </footer>
+    </div>
+    
+<script src="js/script.js"></script>
+</body>
+</html>
